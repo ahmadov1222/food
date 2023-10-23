@@ -10,7 +10,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>
-      <p>dslkj</p>
     </div>
   );
 };
