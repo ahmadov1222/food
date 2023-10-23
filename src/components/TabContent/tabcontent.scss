@@ -1,0 +1,10 @@
+.line {
+  display: block;
+  width: 37px;
+  height: 3px;
+  border-radius: 2px;
+  transform: translateY(15px);
+  &.active {
+    background-color: #ea7c69;
+  }
+}

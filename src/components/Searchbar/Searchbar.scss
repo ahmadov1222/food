@@ -1,0 +1,41 @@
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-family: Barlow;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+  }
+  p {
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+  }
+  form {
+    display: flex;
+    gap: 8px;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #484951;
+    background-color: #393c49;
+  }
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #abbbc2;
+  }
+  input::placeholder {
+    color: #abbbc2;
+  }
+}

@@ -1,0 +1,32 @@
+// font-link
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap");
+
+// variables
+$light: #fff;
+$font: "Barlow", sans-serif;
+$bg-color: #2d303e;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $light;
+  font-family: $font;
+  background-color: $bg-color;
+  color: $light;
+  height: 100%;
+}
+.app {
+  display: flex;
+  padding-left: 104px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

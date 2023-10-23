@@ -1,0 +1,12 @@
+// .payment {
+//   width: 409px;
+//   height: 100vh;
+//   background-color: #1f1d2b;
+//   margin-left: auto;
+// }
+.btn {
+  &.active {
+    background-color: #ea7c69;
+    color: #fff;
+  }
+}
