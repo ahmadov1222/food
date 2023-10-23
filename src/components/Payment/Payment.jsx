@@ -1,13 +1,10 @@
-import { foods } from "../../constants";
 import { FoodContext } from "../../context/FoodContext";
 import Paymentitem2 from "../Paymentitem/Paymentitem2";
-import Paymentitem from "../Paymentitem/Paymentitem2";
 import "./payment.scss";
 import { useContext, useState } from "react";
 
 const Payment = () => {
-  const [foodlist, setFoodlist] = useState(foods);
-  const { foodItems } = useContext(FoodContext);
+  const { payItems } = useContext(FoodContext);
   const [activeContent, setActiveContent] = useState("dine in");
 
   return (
@@ -57,14 +54,12 @@ const Payment = () => {
       </div>
 
       <div className="payment-list grow">
-        {foodlist.map(
+        {payItems.length > 0 && payItems.map(
           (food) =>
-            foodItems[food.id] !== 0 && (
+            (
               <Paymentitem2
                 key={food.id}
-                img={food.img}
-                title={food.title}
-                price={food.price}
+                food={food}
               />
             )
         )}

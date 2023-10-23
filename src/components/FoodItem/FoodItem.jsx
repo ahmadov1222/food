@@ -9,7 +9,7 @@ const FoodItem = ({ food }) => {
   return (
     <li
       className="w-[220px]  rounded-xl bg-[#1F1D2B] text-center p-6 mb-[74px]"
-      onClick={() => addToCart(id)}
+      onClick={() => addToCart(food)}
     >
       <img
         className="w-[149px] h-[149px] rounded-full food-img"
