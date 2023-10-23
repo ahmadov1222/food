@@ -4,22 +4,15 @@ import { foods } from "../constants";
 
 export const FoodContext = createContext();
 
-const getDefaultCart = () => {
-  const cart = {};
-  for (let i = 0; i < foods.length; i++) {
-    cart[i] = 0;
-  }
-  return cart;
-};
-
 const FoodContextProvider = ({ children }) => {
-  const [foodItems, setFoodItems] = useState(getDefaultCart);
+  const [payItems, setPayItems] = useState([]);
 
-  const addToCart = (itemId) => {
-    setFoodItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+  const addToCart = (food) => {
+    setPayItems([...payItems, food]);
   };
+
   return (
-    <FoodContext.Provider value={{ foodItems, addToCart }}>
+    <FoodContext.Provider value={{ payItems, addToCart }}>
       {children}
     </FoodContext.Provider>
   );

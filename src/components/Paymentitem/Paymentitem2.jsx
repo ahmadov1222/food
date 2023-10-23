@@ -1,18 +1,22 @@
 import React from "react";
 
-const Paymentitem2 = (img, title, price) => {
+const Paymentitem2 = (food) => {
+  if(!food){
+    return <p>no data</p>
+  }
+
   return (
     <div>
       <div className="flex gap[21px] items-center">
         <div className="flex items-center gap-[6px]">
           <img
             className="w-[45px] h-[45px] rounded-full"
-            src={img}
-            alt={title}
+            src={food.img}
+            alt={food.title}
           />
           <div className="">
-            <h4 className="mb-1">{title}</h4>
-            <p>{price}</p>
+            <h4 className="mb-1">{food.title}</h4>
+            <p>{food.price}</p>
           </div>
         </div>
         <p>$4,58</p>
