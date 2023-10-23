@@ -1,6 +1,6 @@
 import "./tabcontent.scss";
 import { useState } from "react";
-const Tabcontent = () => {
+const TabContent = () => {
   const [activeTabContent, setActiveTabContent] = useState("Hot Dishes");
   return (
     <ul className="flex gap-8 mt-6 border-b pb-[13px]">
@@ -78,4 +78,4 @@ const Tabcontent = () => {
   );
 };
 
-export default Tabcontent;
+export default TabContent;
